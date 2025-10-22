@@ -24,7 +24,18 @@ function calculateAndDisplay(fn) {
   document.getElementById('result').textContent = fn(a, b);
 }
 
+<<<<<<< HEAD
 ['add', 'subtract', 'multiply'].forEach(op => {
   document.getElementById(`btn-${op}`)
     .addEventListener('click', () => calculateAndDisplay(window[op]));
 });
+=======
+document.getElementById('btn-add')
+  .addEventListener('click', () => calculateAndDisplay(add));
+
+document.getElementById('btn-subtract')
+  .addEventListener('click', () => calculateAndDisplay(subtract));
+
+document.getElementById('btn-multiply')
+  .addEventListener('click', () => calculateAndDisplay(multiply));
+>>>>>>> 1d5f6c9 (Fix bugs in the script.js and test.html)
