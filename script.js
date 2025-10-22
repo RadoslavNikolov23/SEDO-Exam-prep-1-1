@@ -6,10 +6,13 @@ function subtract(a, b) {
   return a - b;
 }
 
-function multiply(a, b) {
-  return a * b;
-}
+document.getElementById('btn-add').addEventListener('click', () => {
+  const a = Number(document.getElementById('a').value);
+  const b = Number(document.getElementById('b').value);
+  document.getElementById('result').textContent = add(a, b);
+});
 
+<<<<<<< HEAD
 function calculateAndDisplay(fn) {
   const rawA = document.getElementById('a').value;
   const rawB = document.getElementById('b').value;
@@ -37,3 +40,10 @@ document.getElementById('btn-subtract')
 
 document.getElementById('btn-multiply')
   .addEventListener('click', () => calculateAndDisplay(multiply));
+=======
+document.getElementById('btn-subtract').addEventListener('click', () => {
+  const a = Number(document.getElementById('a').value);
+  const b = Number(document.getElementById('b').value);
+  document.getElementById('result').textContent = subtract(a, b);
+});
+>>>>>>> 2d6bc0941192bccc178a9768bbc9a3812fea71a3
