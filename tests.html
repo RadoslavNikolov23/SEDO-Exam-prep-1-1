@@ -26,8 +26,43 @@
 
     QUnit.test('multiply()', assert => {
       assert.equal(multiply(2, 3), 6, '2 × 3 = 6');
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
       assert.equal(multiply(-2, 3), -6, '-2 × 3 = -6');
       assert.equal(multiply(2.5, 2), 5, '2.5 × 2 = 5');
+=======
+=======
+>>>>>>> 1d5f6c9 (Fix bugs in the script.js and test.html)
+=======
+      assert.equal(multiply(-2, 3), -6, '-2 × 3 = -6');
+      assert.equal(multiply(2.5, 2), 5, '2.5 × 2 = 5');
+=======
+>>>>>>> be24f12 (Fix bugs in the script.js and test.html)
+=======
+>>>>>>> 1d5f6c9 (Fix bugs in the script.js and test.html)
+    });
+
+    QUnit.test('subtract with empty inputs', assert => {
+      document.getElementById('a').value = '';
+      document.getElementById('b').value = '';
+      document.getElementById('btn-subtract').click();
+      assert.equal(
+        document.getElementById('result').textContent,
+        'Please fill both inputs',
+        'Shows warning if inputs are empty'
+      );
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 1d5f6c9 (Fix bugs in the script.js and test.html)
+=======
+=======
+>>>>>>> be24f12 (Fix bugs in the script.js and test.html)
+>>>>>>> 1d5f6c9 (Fix bugs in the script.js and test.html)
+=======
+>>>>>>> 1d5f6c9 (Fix bugs in the script.js and test.html)
     });
   </script>
 </body>
